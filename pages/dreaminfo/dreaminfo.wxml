@@ -1,0 +1,115 @@
+<!--pages/dreaminfo/dreaminfo.wxml-->
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">愿望详情</view>
+</cu-custom>
+<view class="padding1rem cardWrap test margin-xl">
+  <view class="c-minheight carditem01">
+    <view class="paddinghalfrem wx-view_QvvUkU">
+      <navigator class="wx-navigator_rv4BGW">
+        <image class="wx-image_tBcdCT" mode="aspectFill" src="../../images/baozi.jpg" />
+        <view class="wx-view_cPj0ok">
+          <text class="c-block wx-text_TvHPc9">Baozi</text>
+          <text class="c-block wx-text_LS2Jup">November 5, 1955</text>
+        </view>
+      </navigator>
+    </view>
+    <view class="wx-navigator_PNd8QQ">
+      <image class="wx-image_BEjy38" src="http://qty83k.creatby.com/materials/origin/cc09a72b7456da9c074c33dfffc1f94b_origin_2.jpg" />
+      <view class="padding1rem wx-view_KedDbI content">
+        <text class="c-block wx-text_6zTs4l">希望期末考试都稳过！！！！</text>
+      </view>
+    </view>
+    <view class="paddinghalfrem wx-view_adF7Mw">
+      <view class="wx-view_2gazUr">
+        <view class="wx-view_DKe6UT">
+          <image class="wx-image_6E2A1o" mode="aspectFit" src="http://qty83k.creatby.com/materials/origin/a67f2e79e6ed8ae5bf46237d4f88a4e7_origin.png" />
+          <text class="c-block wx-text_id0VJj">235</text>
+        </view>
+        <view class="wx-view_DKe6UT">
+          <image class="wx-image_6E2A1o" mode="aspectFit" src="http://qty83k.creatby.com/materials/origin/0564a45ab780222757935674e13d6919_origin.png" />
+          <text class="c-block wx-text_id0VJj">143</text>
+        </view>
+      </view>
+      <text class="c-block wx-text_9Wn0Di">1小时前</text>
+    </view>
+
+    <view class="cu-list menu-avatar comment solids-top">
+      <view class="cu-item">
+        <view class="cu-avatar round" style="background-image:url(https://ossweb-img.qq.com/images/lol/img/champion/Morgana.png);"></view>
+        <view class="content">
+          <view class="text-grey">莫甘娜</view>
+          <view class="text-gray text-content text-df">
+            凯尔，你被自己的光芒变的盲目。
+          </view>
+          <view class="margin-top-sm flex justify-between">
+            <view class="text-gray text-df">2018年12月4日</view>
+            <view>
+              <text class="cuIcon-appreciatefill text-red"></text>
+              <text class="wx-text_id0VJj"> 235</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="cu-item">
+        <view class="cu-avatar round" style="background-image:url(https://ossweb-img.qq.com/images/lol/img/champion/Morgana.png);"></view>
+        <view class="content">
+          <view class="text-grey">莫甘娜</view>
+          <view class="text-gray text-content text-df">
+            凯尔，你被自己的光芒变的盲目。
+          </view>
+          <view class="margin-top-sm flex justify-between">
+            <view class="text-gray text-df">2018年12月4日</view>
+            <view>
+              <text class="cuIcon-appreciatefill text-red"></text>
+              <text class="wx-text_id0VJj"> 235</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="cu-item">
+        <view class="cu-avatar round" style="background-image:url(https://ossweb-img.qq.com/images/lol/img/champion/Morgana.png);"></view>
+        <view class="content">
+          <view class="text-grey">莫甘娜</view>
+          <view class="text-gray text-content text-df">
+            凯尔，你被自己的光芒变的盲目。
+          </view>
+          <view class="margin-top-sm flex justify-between">
+            <view class="text-gray text-df">2018年12月4日</view>
+            <view>
+              <text class="cuIcon-appreciatefill text-red"></text>
+              <text class="wx-text_id0VJj"> 235</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="cu-item">
+        <view class="cu-avatar round" style="background-image:url(https://ossweb-img.qq.com/images/lol/img/champion/Morgana.png);"></view>
+        <view class="content">
+          <view class="text-grey">莫甘娜</view>
+          <view class="text-gray text-content text-df">
+            凯尔，你被自己的光芒变的盲目。
+          </view>
+          <view class="margin-top-sm flex justify-between">
+            <view class="text-gray text-df">2018年12月4日</view>
+            <view>
+              <text class="cuIcon-appreciatefill text-red"></text>
+              <text class="wx-text_id0VJj"> 235</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="cu-bar input">
+  <view class="cu-avatar round" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></view>
+  <view class="action">
+    <text class="cuIcon-roundaddfill text-grey"></text>
+  </view>
+  <input class="solid-bottom" maxlength="300" cursor-spacing="10"></input>
+  <view class="action">
+    <text class="cuIcon-emojifill text-grey"></text>
+  </view>
+  <button class="cu-btn bg-green shadow-blur">发送</button>
+</view>

@@ -1,0 +1,11 @@
+/* pages/dreaminfo/dreaminfo.wxss */
+
+.content {
+  padding: 16rpx;
+}
+.input{
+  position: fixed;
+  bottom: 0rpx;
+  width: 100%;
+  background-color:  #f1f1f1;
+}

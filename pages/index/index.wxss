@@ -1,0 +1,27 @@
+/**index.wxss**/
+.map{
+  height: 100%;
+  width: 100%;
+}
+.coverview1{
+  position: fixed;
+  top: 166rpx;
+  right: 36rpx;
+  background-color: #fff6fbfd;
+  border-radius: 10%;
+}
+.coverview1 cover-image{
+  height: 86rpx;
+  width: 86rpx;
+}
+.coverview2{
+  position: fixed;
+  top: 266rpx;
+  right: 36rpx;
+  background-color: #fff6fbfd;
+  border-radius: 50%;
+}
+.coverview2 cover-image{
+  height: 86rpx;
+  width: 86rpx;
+}

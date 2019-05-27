@@ -1,0 +1,10 @@
+<map id="map" class="map" longitude='104.0680165911' latitude='30.5491861989' scale='14' markers="{{markers}}">
+  <cover-view class='coverview1'>
+    <cover-image src='../../icons/format-indent-decrease.png' bindtap='addmarkers'>
+    </cover-image>
+  </cover-view>
+  <cover-view class='coverview2'>
+    <cover-image src='../../icons/crosshairs-gps.png' bindtap='select'>
+    </cover-image>
+  </cover-view>
+</map>

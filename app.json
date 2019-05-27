@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/dreaminfo/dreaminfo",
+    "pages/logs/logs",
+    "pages/adddream/adddream",
+    "pages/about/about/about",
+    "pages/about/log/log",
+    "pages/about/test/list",
+    "pages/about/test/filter",
+    "pages/about/home/home",
+    "pages/about/timeline/timeline"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#cba7f9",
+    "navigationBarTitleText": "许个愿吧",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "black",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "锦鲤池",
+        "iconPath": "icons/emoticon-kiss.png",
+        "selectedIconPath": "icons/emoticon-kiss-outline.png"
+      },
+      {
+        "pagePath": "pages/adddream/adddream",
+        "text": "来许愿",
+        "iconPath": "icons/email-plus.png",
+        "selectedIconPath": "icons/email-plus-outline.png"
+      },
+      {
+        "pagePath": "pages/about/home/home",
+        "text": "欢乐多",
+        "iconPath": "icons/account-heart.png",
+        "selectedIconPath": "icons/account-heart-outline.png"
+      }
+    ]
+  },
+  "debug": true
+}
