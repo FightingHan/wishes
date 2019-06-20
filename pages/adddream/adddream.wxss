@@ -1,0 +1,20 @@
+.cu-form-group .title {
+  min-width: calc(4em + 30rpx);
+}
+.dream-type{
+  height: 260rpx;
+
+}
+.UCenter-bg {
+  background-image: url(https://image.weilanwl.com/color2.0/index.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding-top: 40rpx;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 36rpx;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 300;
+}

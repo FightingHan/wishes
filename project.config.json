@@ -3,36 +3,24 @@
 	"packOptions": {
 		"ignore": []
 	},
-	"cloudfunctionRoot": "cloudfunctions/",
 	"setting": {
 		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
-		"minified": false,
+		"minified": true,
 		"newFeature": true,
-		"coverView": true,
-		"autoAudits": false,
-		"uglifyFileName": true,
-		"checkInvalidKey": true,
-		"checkSiteMap": true,
-		"uploadWithSourceMap": true,
-		"babelSetting": {
-			"ignore": [],
-			"disablePlugins": [],
-			"outputPath": ""
-		}
+		"autoAudits": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.4.2",
 	"appid": "wx7fbb9afb74eecc75",
-	"projectname": "ColorUI-template",
+	"projectname": "%E8%AE%B8%E4%B8%AA%E6%84%BF%E5%90%A71.0",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
-	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
 	"condition": {
 		"search": {
 			"current": -1,

@@ -1,71 +1,10 @@
-<view wx:if="{{isHide}}">
-  <view wx:if="{{canIUse}}">
-    <view class='header'>
-      <image src='/images/wx_login.png'></image>
-    </view>
-
-    <view class='contents'>
-      <view>申请获取以下权限</view>
-      <text>获得你的公开信息(昵称，头像等)</text>
-    </view>
-
-    <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
-      授权登录
-    </button>
-  </view>
-  <view wx:else>请升级微信版本</view>
-</view>
-<view wx:else class='all'>
-  <view class="cu-bar bg-gradual-pink margin-top">
-    <view class="search-form radius">
-      <text class="cuIcon-search"></text>
-      <input type="text" placeholder="搜索想看的地点" bindinput="getsuggest" value="{{backfill}}"></input>
-    </view>
-    <view class='basis-sm  text-left'>
-        <text class="cuIcon-close" bindtap='close'></text>
-    </view>
-  </view>
-  <cover-view class="result text-left" wx:for="{{suggestion}}" wx:key="index">
-    <!--绑定回填事件-->
-    <cover-view data-longitude='{{item.longitude}}' data-latitude='{{item.latitude}}' bindtap='changeLocation'>
-      <!--根据需求渲染相应数据-->
-      <!--渲染地址title-->
-      <cover-view class="text-left" style="font-size:16px;color:#666;" bindtap="backfill" id="{{index}}">{{item.title}}</cover-view>
-      <!--渲染详细地址-->
-      <cover-view style="font-size:12px;color:#666;" class="text-left">{{item.addr}}</cover-view>
-    </cover-view>
+<map id="map" class="map" longitude='104.0680165911' latitude='30.5491861989' scale='14' markers="{{markers}}">
+  <cover-view class='coverview1'>
+    <cover-image src='../../icons/format-indent-decrease.png' bindtap='addmarkers'>
+    </cover-image>
   </cover-view>
-  <map wx:if="{{flag}}" id="map" class="map" longitude='{{longitude}}' latitude='{{latitude}}' subkey="VC4BZ-LA4KS-I5UO4-6OKRX-E24WZ-ODFFW" scale='17' markers="{{markers}}" bindmarkertap='checkMarkers'>
-    <cover-view bindtap="showModal" data-target="RadioModal" class='coverview1'>
-      <cover-image src='../../icons/search.png'>
-      </cover-image>
-    </cover-view>
-    <cover-view class='coverview2' bindtap="getMyLocation">
-      <cover-image src='../../icons/location.png'>
-      </cover-image>
-    </cover-view>
-    <cover-view bindtap='refresh' class='coverview3'>
-      <cover-image src='../../icons/where.png'>
-      </cover-image>
-    </cover-view>
-  </map>
-</view>
-<cover-view class="{{modalName=='RadioModal'?'choose':'hide'}}">
-  <cover-view class="cu-list menu text-left">
-    <cover-view class="cu-item" wx:for="{{model}}" wx:key='url'>
-      <cover-view class="content" data-dream-type='{{index}}' bindtap='chooseType'>
-        <cover-image class="chooseimage" src="{{item.url}}"></cover-image>
-        <cover-view class='choosetext'>{{item.text}}</cover-view>
-      </cover-view>
-    </cover-view>
-    <button class="margin-top choosebutton round lg" bindtap='hideModal'>
-      返回喔
-    </button>
+  <cover-view class='coverview2'>
+    <cover-image src='../../icons/crosshairs-gps.png' bindtap='select'>
+    </cover-image>
   </cover-view>
-</cover-view>
-
-<cover-view class="{{modalName=='Image'?'show cu-modal':'hide'}}">
-  <cover-view class="cu-dialog">
-    <cover-image class="bg-img" mode='widthFix' src="https://file.digitaling.com/eImg/uimages/20150907/1441607117423593.gif"></cover-image>
-  </cover-view>
-</cover-view>
+</map>
