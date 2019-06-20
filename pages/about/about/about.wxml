@@ -1,6 +1,6 @@
 <cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
   <view slot="backText">返回</view>
-  <view slot="content">表单</view>
+  <view slot="content">关于它</view>
 </cu-custom>
 <view class='margin-xl bg-white padding-xl radius shadow-lg'>
   <view class='text-center margin-bottom text-lg  text-grey'>关于ColorUI组件库</view>

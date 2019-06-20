@@ -3,113 +3,75 @@
   <view slot="backText">返回</view>
   <view slot="content">愿望详情</view>
 </cu-custom>
-<view class="padding1rem cardWrap test margin-xl">
-  <view class="c-minheight carditem01">
-    <view class="paddinghalfrem wx-view_QvvUkU">
-      <navigator class="wx-navigator_rv4BGW">
-        <image class="wx-image_tBcdCT" mode="aspectFill" src="../../images/baozi.jpg" />
-        <view class="wx-view_cPj0ok">
-          <text class="c-block wx-text_TvHPc9">Baozi</text>
-          <text class="c-block wx-text_LS2Jup">November 5, 1955</text>
-        </view>
-      </navigator>
-    </view>
-    <view class="wx-navigator_PNd8QQ">
-      <image class="wx-image_BEjy38" src="http://qty83k.creatby.com/materials/origin/cc09a72b7456da9c074c33dfffc1f94b_origin_2.jpg" />
-      <view class="padding1rem wx-view_KedDbI content">
-        <text class="c-block wx-text_6zTs4l">希望期末考试都稳过！！！！</text>
-      </view>
-    </view>
-    <view class="paddinghalfrem wx-view_adF7Mw">
-      <view class="wx-view_2gazUr">
-        <view class="wx-view_DKe6UT">
-          <image class="wx-image_6E2A1o" mode="aspectFit" src="http://qty83k.creatby.com/materials/origin/a67f2e79e6ed8ae5bf46237d4f88a4e7_origin.png" />
-          <text class="c-block wx-text_id0VJj">235</text>
-        </view>
-        <view class="wx-view_DKe6UT">
-          <image class="wx-image_6E2A1o" mode="aspectFit" src="http://qty83k.creatby.com/materials/origin/0564a45ab780222757935674e13d6919_origin.png" />
-          <text class="c-block wx-text_id0VJj">143</text>
-        </view>
-      </view>
-      <text class="c-block wx-text_9Wn0Di">1小时前</text>
-    </view>
-
-    <view class="cu-list menu-avatar comment solids-top">
-      <view class="cu-item">
-        <view class="cu-avatar round" style="background-image:url(https://ossweb-img.qq.com/images/lol/img/champion/Morgana.png);"></view>
-        <view class="content">
-          <view class="text-grey">莫甘娜</view>
-          <view class="text-gray text-content text-df">
-            凯尔，你被自己的光芒变的盲目。
-          </view>
-          <view class="margin-top-sm flex justify-between">
-            <view class="text-gray text-df">2018年12月4日</view>
-            <view>
-              <text class="cuIcon-appreciatefill text-red"></text>
-              <text class="wx-text_id0VJj"> 235</text>
+<view>
+  <view class="cardWrap test margin-xl shadow-warp bg-white">
+    <view class="cu-card dynamic no-card">
+      <view class="cu-item shadow">
+        <view class="cu-list menu-avatar">
+          <view class="cu-item">
+            <view class="cu-avatar round lg" style="background-image:url({{userInfo.avatarUrl}});"></view>
+            <view class="content flex-sub">
+              <view>{{userInfo.nickName}}</view>
+              <view class="text-gray text-sm flex justify-between">
+                {{dreamInfo.dreamdt}}
+              </view>
             </view>
           </view>
         </view>
-      </view>
-      <view class="cu-item">
-        <view class="cu-avatar round" style="background-image:url(https://ossweb-img.qq.com/images/lol/img/champion/Morgana.png);"></view>
-        <view class="content">
-          <view class="text-grey">莫甘娜</view>
-          <view class="text-gray text-content text-df">
-            凯尔，你被自己的光芒变的盲目。
-          </view>
-          <view class="margin-top-sm flex justify-between">
-            <view class="text-gray text-df">2018年12月4日</view>
-            <view>
-              <text class="cuIcon-appreciatefill text-red"></text>
-              <text class="wx-text_id0VJj"> 235</text>
-            </view>
-          </view>
+        <view class="text-content">
+          {{dreamInfo.dreamContent}}
         </view>
-      </view>
-      <view class="cu-item">
-        <view class="cu-avatar round" style="background-image:url(https://ossweb-img.qq.com/images/lol/img/champion/Morgana.png);"></view>
-        <view class="content">
-          <view class="text-grey">莫甘娜</view>
-          <view class="text-gray text-content text-df">
-            凯尔，你被自己的光芒变的盲目。
-          </view>
-          <view class="margin-top-sm flex justify-between">
-            <view class="text-gray text-df">2018年12月4日</view>
-            <view>
-              <text class="cuIcon-appreciatefill text-red"></text>
-              <text class="wx-text_id0VJj"> 235</text>
-            </view>
-          </view>
+        <block wx:if='{{dreamInfo.dreamPic!= null}}'>
+          <swiper class="screen-swiper square-dot" indicator-dots="true" autoplay='true'>
+            <swiper-item wx:for="{{dreamInfo.dreamPic}}" bindtap='ViewImage'>
+              <image src="{{item}}" mode="aspectFill" data-item-index='{{index}}'></image>
+            </swiper-item>
+          </swiper>
+        </block>
+        <view class="text-gray text-lg text-right padding">
+          <text class="cuIcon-like {{isDreamLike?'text-red':''}}" data-info-id='{{dreamInfo._id}}' data-like-type='0' bindtap="{{isDreamLike?'':'like'}}"></text> {{dreamInfo.dreamLikes}}
+          <text class="cuIcon-messagefill margin-left" bindtap="{{showComment == 'true'?'':'showComment'}}" data-class="slide-bottom"></text> {{sumComment}}
         </view>
-      </view>
-      <view class="cu-item">
-        <view class="cu-avatar round" style="background-image:url(https://ossweb-img.qq.com/images/lol/img/champion/Morgana.png);"></view>
-        <view class="content">
-          <view class="text-grey">莫甘娜</view>
-          <view class="text-gray text-content text-df">
-            凯尔，你被自己的光芒变的盲目。
-          </view>
-          <view class="margin-top-sm flex justify-between">
-            <view class="text-gray text-df">2018年12月4日</view>
-            <view>
-              <text class="cuIcon-appreciatefill text-red"></text>
-              <text class="wx-text_id0VJj"> 235</text>
+        <view class="cu-list menu-avatar comment solids-top animation-{{animation=='slide-bottom'?'slide-bottom':''}}">
+          <block wx:for="{{commentList}}" wx:key='_id'>
+            <view class="cu-item">
+              <view class="cu-avatar round" style="background-image:url({{item.avatarUrl}});"></view>
+              <view class="content">
+                <view class="text-grey">{{item.nickName}}</view>
+                <view class="text-gray text-content text-df">
+                  {{item.comment}}
+                </view>
+                <view class="margin-top-sm flex justify-between">
+                  <view class="text-gray text-df">{{item.commentdt}}</view>
+                  <block wx:if="{{item.isLike=='true'}}">
+                    <view data-info-id='{{item._id}}' data-like-type='1' data-item-index='{{index}}'>
+                      <text class="text-red cuIcon-appreciatefill"></text> {{item.likes}}
+                    </view>
+                  </block>
+                  <block wx:else>
+                    <view data-info-id='{{item._id}}' bindtap='like' data-like-type='1' data-item-index='{{index}}'>
+                      <text class="text-gray cuIcon-appreciatefill"></text> {{item.likes}}
+                    </view>
+                  </block>
+                </view>
+              </view>
             </view>
-          </view>
+          </block>
         </view>
       </view>
     </view>
   </view>
+  <form bindsubmit='addComment'>
+    <view class="cu-bar input" style="bottom:{{bottom}}px">
+      <view class="cu-avatar round" style="background-image:url({{myInfo.avatarUrl}});"></view>
+      <input class="solid-bottom" maxlength="300" cursor-spacing="10" name='comment' value='{{comment}}' adjust-position="{{inputUp}}" adjust-position="{{false}}" bindfocus="foucus" bindblur="blur"> </input>
+      <button class="cu-btn bg-green shadow-blur" form-type='submit'>发送</button>
+    </view>
+  </form>
 </view>
-<view class="cu-bar input">
-  <view class="cu-avatar round" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></view>
-  <view class="action">
-    <text class="cuIcon-roundaddfill text-grey"></text>
+<view class="cu-modal {{modalName=='Image'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="bg-img" style="background-image: url('https://file.digitaling.com/eImg/uimages/20150907/1441607617878500.gif');height:200px;">
+    </view>
   </view>
-  <input class="solid-bottom" maxlength="300" cursor-spacing="10"></input>
-  <view class="action">
-    <text class="cuIcon-emojifill text-grey"></text>
-  </view>
-  <button class="cu-btn bg-green shadow-blur">发送</button>
 </view>

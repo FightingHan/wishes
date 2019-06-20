@@ -3,9 +3,21 @@
 .content {
   padding: 16rpx;
 }
-.input{
+.cardWrap{
+  border-radius: 15%;
+}
+.cu-bar{
   position: fixed;
   bottom: 0rpx;
   width: 100%;
   background-color:  #f1f1f1;
+}
+.dreampic{
+  width: 100%;
+}
+.screen-swiper{
+    height:536rpx;
+}
+.screen-swiper swiper-item{
+    height:auto;
 }

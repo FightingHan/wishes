@@ -3,20 +3,24 @@
     "pages/index/index",
     "pages/dreaminfo/dreaminfo",
     "pages/logs/logs",
-    "pages/adddream/adddream",
     "pages/about/about/about",
     "pages/about/log/log",
-    "pages/about/test/list",
-    "pages/about/test/filter",
-    "pages/about/home/home",
-    "pages/about/timeline/timeline"
+    "pages/about/timeline/timeline",
+    "pages/form/form",
+    "pages/profile/profile"
   ],
+  "cloud": true,
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
   "window": {
     "navigationBarBackgroundColor": "#cba7f9",
     "navigationBarTitleText": "许个愿吧",
-    "enablePullDownRefresh": true,
-    "backgroundTextStyle": "light",
+    "backgroundTextStyle": "dark",
     "navigationStyle": "custom",
+    "enablePullDownRefresh": true,
     "navigationBarTextStyle": "white"
   },
   "usingComponents": {
@@ -25,7 +29,7 @@
   "sitemapLocation": "sitemap.json",
   "tabBar": {
     "color": "#000000",
-    "selectedColor": "black",
+    "selectedColor": "#bf209f",
     "borderStyle": "black",
     "list": [
       {
@@ -35,13 +39,13 @@
         "selectedIconPath": "icons/emoticon-kiss-outline.png"
       },
       {
-        "pagePath": "pages/adddream/adddream",
+        "pagePath": "pages/form/form",
         "text": "来许愿",
         "iconPath": "icons/email-plus.png",
         "selectedIconPath": "icons/email-plus-outline.png"
       },
       {
-        "pagePath": "pages/about/home/home",
+        "pagePath": "pages/profile/profile",
         "text": "欢乐多",
         "iconPath": "icons/account-heart.png",
         "selectedIconPath": "icons/account-heart-outline.png"

@@ -1,0 +1,18 @@
+.cu-form-group .title {
+  min-width: calc(4em + 30rpx);
+}
+.submit{
+  float: right;
+  margin-right: 16rpx;
+}
+.card{
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+.dreaminfo{
+  border-radius: 10%;
+  margin: 16rpx;
+}
+.action image{
+  height: 66rpx;
+  width: 66rpx;
+}

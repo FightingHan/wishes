@@ -1,27 +1,173 @@
 /**index.wxss**/
-.map{
+
+.all {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.map {
   height: 100%;
   width: 100%;
 }
-.coverview1{
+
+.cu-bar {
+  margin-top: 56rpx;
+}
+
+.search-form {
+  width: 366rpx;
+}
+
+.result {
   position: fixed;
   top: 166rpx;
-  right: 36rpx;
-  background-color: #fff6fbfd;
-  border-radius: 10%;
+  background-color: rgb(255, 255, 255);
+  left: 22rpx;
+  border-radius: 15%;
+  width: 516rpx;
+  padding: 36rpx;
 }
-.coverview1 cover-image{
+
+.result cover-view {
+  width: 516rpx;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-line;
+}
+
+.coverview1 {
+  position: fixed;
+  top: 166rpx;
+  background-color: rgb(255, 255, 255);
+  right: 36rpx;
+  border-radius: 15%;
+}
+
+.coverview1 cover-image {
   height: 86rpx;
   width: 86rpx;
 }
-.coverview2{
+
+.coverview2 {
   position: fixed;
   top: 266rpx;
+  background-color: rgb(255, 255, 255);
   right: 36rpx;
-  background-color: #fff6fbfd;
-  border-radius: 50%;
+  border-radius: 15%;
 }
-.coverview2 cover-image{
+
+.coverview2 cover-image {
   height: 86rpx;
   width: 86rpx;
+}
+
+.coverview3 {
+  position: fixed;
+  top: 366rpx;
+  background-color: rgb(255, 255, 255);
+  right: 36rpx;
+  border-radius: 15%;
+}
+
+.coverview3 cover-image {
+  height: 86rpx;
+  width: 86rpx;
+}
+
+.choose {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 366rpx;
+  right: 86rpx;
+  background-color: rgb(254, 193, 209);
+  width: 536rpx;
+  height: 688rpx;
+  padding: 36rpx;
+  border-radius: 10%;
+}
+
+.hide {
+  display: none;
+}
+
+.zongzi {
+  height: 136rpx;
+  width: 100%;
+}
+
+.choose .back {
+  margin-left: 168rpx;
+}
+
+.choosebutton {
+  background-color: rgb(206, 41, 198);
+  border-radius: 15%;
+}
+
+.bg-img {
+  height: 436rpx;
+}
+
+.cu-dialog {
+  position: fixed;
+  top: 450rpx;
+  right: 36rpx;
+}
+
+.choosetext {
+  background-color: rgba(255, 255, 255, 0.973);
+  font-size: 34rpx;
+  border-radius: 15%;
+  padding: 10rpx;
+  margin: 10rpx;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.content text {
+  margin-top: 16rpx;
+  font-size: 46rpx;
+}
+
+.chooseimage {
+  height: 86rpx;
+  width: 86rpx;
+}
+
+.header {
+  margin: 90rpx 0 90rpx 50rpx;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  width: 650rpx;
+  height: 300rpx;
+  line-height: 450rpx;
+}
+
+.header image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.contents {
+  margin-left: 50rpx;
+  margin-bottom: 90rpx;
+}
+
+.contents text {
+  display: block;
+  color: #9d9d9d;
+  margin-top: 40rpx;
+}
+
+.bottom {
+  border-radius: 80rpx;
+  margin: 70rpx 50rpx;
+  font-size: 35rpx;
 }
